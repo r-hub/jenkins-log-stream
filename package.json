@@ -1,0 +1,26 @@
+{
+  "name": "jenkins-log-stream",
+  "version": "1.0.0",
+  "description": "Stream the console output of a Jenkins job",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/r-hub/jenkins-log-stream.git"
+  },
+  "keywords": [
+    "Jenkins",
+    "console",
+    "output",
+    "log",
+    "stream"
+  ],
+  "author": "Gábor Csárdi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r-hub/jenkins-log-stream/issues"
+  },
+  "homepage": "https://github.com/r-hub/jenkins-log-stream#readme"
+}
