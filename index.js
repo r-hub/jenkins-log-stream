@@ -30,7 +30,10 @@ JenkinsOutput.prototype._read = function() {
 
 	got.post(url, {
 	    auth: self._url.auth,
-	    query: { 'start': self._n } })
+	    query: { 'start': self._n },
+	    headers: {
+		'user-agent': 'https://github.com/r-hub/jenkins-log-stream',
+		'accept-charset': 'utf-8'} } )
 
 	    .then(function(response) {
 		self._n = response.headers['x-text-size'];
