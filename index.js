@@ -51,8 +51,8 @@ JenkinsOutput.prototype._read = function() {
 	    })
 
 	    .catch(function(error) {
-		// ignore errors for now, we just keep polling
-		setTimeout(get, self.pollInterval);
+		// if error, end the stream
+		self.push(null);
 	    });
     }
 
