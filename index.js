@@ -28,7 +28,7 @@ JenkinsOutput.prototype._read = function() {
 	var url = self._url.protocol + '//' + self._url.host +
 	    self._url.path;
 
-	got.post(url, {
+	got.get(url, {
 	    auth: self._url.auth,
 	    query: { 'start': self._n }	})
 
