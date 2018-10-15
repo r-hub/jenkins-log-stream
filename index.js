@@ -49,11 +49,6 @@ JenkinsOutput.prototype._read = function() {
 		    setTimeout(get, self._pollInterval);
 		}
 	    })
-
-	    .catch(function(error) {
-		// ignore errors for now, we just keep polling
-		setTimeout(get, self._pollInterval);
-	    });
     }
 
     get();
