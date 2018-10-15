@@ -46,13 +46,13 @@ JenkinsOutput.prototype._read = function() {
 		} else if (response.body.length == 0) {
 		    // If there will be more data in the future,
 		    // then try to poll again in three seconds.
-		    setTimeout(get, self.pollInterval);
+		    setTimeout(get, self._pollInterval);
 		}
 	    })
 
 	    .catch(function(error) {
 		// ignore errors for now, we just keep polling
-		setTimeout(get, self.pollInterval);
+		setTimeout(get, self._pollInterval);
 	    });
     }
 
