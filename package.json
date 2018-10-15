@@ -1,6 +1,6 @@
 {
   "name": "jenkins-log-stream",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Stream the console output of a Jenkins job",
   "main": "index.js",
   "scripts": {

@@ -12,7 +12,7 @@ $ npm install --save jenkins-log-stream
 ## Usage
 
 ```js
-var JenkinsLogStream = require('jenkins-log-sream');
+var JenkinsLogStream = require('jenkins-log-stream');
 var stream = new JenkinsLogStream({
   'baseUrl': 'http://user:pass@jenkins.server:8080',
   'job': 'jenkins-job',
